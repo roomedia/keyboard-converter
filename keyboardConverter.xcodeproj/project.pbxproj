@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		FB37178726A451F1008F100E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB37178526A451F1008F100E /* Main.storyboard */; };
 		FB37179326A451F2008F100E /* keyboardConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37179226A451F2008F100E /* keyboardConverterTests.swift */; };
 		FB37179E26A451F2008F100E /* keyboardConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37179D26A451F2008F100E /* keyboardConverterUITests.swift */; };
+		FB3717B026A4522E008F100E /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = FB3717AF26A4522E008F100E /* HotKey */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3717B026A4522E008F100E /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +142,9 @@
 			dependencies = (
 			);
 			name = keyboardConverter;
+			packageProductDependencies = (
+				FB3717AF26A4522E008F100E /* HotKey */,
+			);
 			productName = keyboardConverter;
 			productReference = FB37177C26A451EE008F100E /* keyboardConverter.app */;
 			productType = "com.apple.product-type.application";
@@ -211,6 +216,9 @@
 				Base,
 			);
 			mainGroup = FB37177326A451EE008F100E;
+			packageReferences = (
+				FB3717AE26A4522E008F100E /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = FB37177D26A451EE008F100E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -582,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB3717AE26A4522E008F100E /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB3717AF26A4522E008F100E /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB3717AE26A4522E008F100E /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB37177426A451EE008F100E /* Project object */;
 }

@@ -6,21 +6,29 @@
 //
 
 import Cocoa
+import Carbon
+import HotKey
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
-
+    private var hotKey: HotKey? {
+        didSet {
+            guard let hotKey = hotKey else {
+                return
+            }
+            
+            hotKey.keyDownHandler = {
+                print("Pressed at \(Date())")
+            }
+        }
+    }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        hotKey = HotKey(keyCombo: KeyCombo(key: .space, modifiers: [.shift]))
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        hotKey = nil
     }
-
-
 }
-
