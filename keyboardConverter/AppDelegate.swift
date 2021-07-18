@@ -11,7 +11,7 @@ import HotKey
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private var hotKey: HotKey? {
         didSet {
             guard let hotKey = hotKey else {
@@ -25,7 +25,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        constructMenu()
         hotKey = HotKey(keyCombo: KeyCombo(key: .space, modifiers: [.shift]))
+    }
+    
+    func constructMenu() {
+        let menu = NSMenu()
+        menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+        
+        statusItem.menu = menu
+        statusItem.button?.image = #imageLiteral(resourceName: "StatusBarIcon")
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {

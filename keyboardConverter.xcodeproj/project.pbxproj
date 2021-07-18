@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FB37178026A451EE008F100E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37177F26A451EE008F100E /* AppDelegate.swift */; };
-		FB37178226A451EE008F100E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37178126A451EE008F100E /* ViewController.swift */; };
 		FB37178426A451F1008F100E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB37178326A451F1008F100E /* Assets.xcassets */; };
 		FB37178726A451F1008F100E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB37178526A451F1008F100E /* Main.storyboard */; };
 		FB37179326A451F2008F100E /* keyboardConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37179226A451F2008F100E /* keyboardConverterTests.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		FB37177C26A451EE008F100E /* keyboardConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = keyboardConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB37177F26A451EE008F100E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB37178126A451EE008F100E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB37178326A451F1008F100E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB37178626A451F1008F100E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB37178826A451F1008F100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				FB37177F26A451EE008F100E /* AppDelegate.swift */,
-				FB37178126A451EE008F100E /* ViewController.swift */,
 				FB37178326A451F1008F100E /* Assets.xcassets */,
 				FB37178526A451F1008F100E /* Main.storyboard */,
 				FB37178826A451F1008F100E /* Info.plist */,
@@ -261,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB37178226A451EE008F100E /* ViewController.swift in Sources */,
 				FB37178026A451EE008F100E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
