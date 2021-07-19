@@ -12,14 +12,16 @@ import HotKey
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+    private let virtualKeyManager = VirtualKeyManager()
+
     private var hotKey: HotKey? {
         didSet {
             guard let hotKey = hotKey else {
                 return
             }
             
-            hotKey.keyDownHandler = {
-                print("Pressed at \(Date())")
+            hotKey.keyUpHandler = {
+                self.virtualKeyManager.copyConvertPaste()
             }
         }
     }

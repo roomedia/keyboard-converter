@@ -9,6 +9,15 @@
           "revision": "c13662730cb5bc28de4a799854bbb018a90649bf",
           "version": "0.1.3"
         }
+      },
+      {
+        "package": "Sauce",
+        "repositoryURL": "https://github.com/Clipy/Sauce",
+        "state": {
+          "branch": null,
+          "revision": "2fcf7e43a242b183fdea3f2275ebec0d773b65f5",
+          "version": "2.2.0"
+        }
       }
     ]
   },

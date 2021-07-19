@@ -13,6 +13,8 @@
 		FB37179326A451F2008F100E /* keyboardConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37179226A451F2008F100E /* keyboardConverterTests.swift */; };
 		FB37179E26A451F2008F100E /* keyboardConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB37179D26A451F2008F100E /* keyboardConverterUITests.swift */; };
 		FB3717B026A4522E008F100E /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = FB3717AF26A4522E008F100E /* HotKey */; };
+		FB413CB526A5B028004AF723 /* VirtualKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB413CB426A5B028004AF723 /* VirtualKeyManager.swift */; };
+		FB413CBB26A5B10C004AF723 /* Sauce in Frameworks */ = {isa = PBXBuildFile; productRef = FB413CBA26A5B10C004AF723 /* Sauce */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		FB37179926A451F2008F100E /* keyboardConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = keyboardConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB37179D26A451F2008F100E /* keyboardConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardConverterUITests.swift; sourceTree = "<group>"; };
 		FB37179F26A451F2008F100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB413CB426A5B028004AF723 /* VirtualKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualKeyManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB413CBB26A5B10C004AF723 /* Sauce in Frameworks */,
 				FB3717B026A4522E008F100E /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +105,7 @@
 				FB37178526A451F1008F100E /* Main.storyboard */,
 				FB37178826A451F1008F100E /* Info.plist */,
 				FB37178926A451F1008F100E /* keyboardConverter.entitlements */,
+				FB413CB426A5B028004AF723 /* VirtualKeyManager.swift */,
 			);
 			path = keyboardConverter;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			name = keyboardConverter;
 			packageProductDependencies = (
 				FB3717AF26A4522E008F100E /* HotKey */,
+				FB413CBA26A5B10C004AF723 /* Sauce */,
 			);
 			productName = keyboardConverter;
 			productReference = FB37177C26A451EE008F100E /* keyboardConverter.app */;
@@ -215,6 +221,7 @@
 			mainGroup = FB37177326A451EE008F100E;
 			packageReferences = (
 				FB3717AE26A4522E008F100E /* XCRemoteSwiftPackageReference "HotKey" */,
+				FB413CB926A5B10C004AF723 /* XCRemoteSwiftPackageReference "Sauce" */,
 			);
 			productRefGroup = FB37177D26A451EE008F100E /* Products */;
 			projectDirPath = "";
@@ -259,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB37178026A451EE008F100E /* AppDelegate.swift in Sources */,
+				FB413CB526A5B028004AF723 /* VirtualKeyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +604,14 @@
 				minimumVersion = 0.1.3;
 			};
 		};
+		FB413CB926A5B10C004AF723 /* XCRemoteSwiftPackageReference "Sauce" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/Sauce";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -603,6 +619,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FB3717AE26A4522E008F100E /* XCRemoteSwiftPackageReference "HotKey" */;
 			productName = HotKey;
+		};
+		FB413CBA26A5B10C004AF723 /* Sauce */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB413CB926A5B10C004AF723 /* XCRemoteSwiftPackageReference "Sauce" */;
+			productName = Sauce;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
