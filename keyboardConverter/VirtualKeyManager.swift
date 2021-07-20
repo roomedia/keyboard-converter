@@ -32,9 +32,6 @@ class VirtualKeyManager {
     private func getPasteboardString() -> String {
         return NSPasteboard.general.string(forType: .string) ?? ""
     }
-    private func convert(src: String) -> String {
-        return src + " tested"
-    }
     private func setPasteboardString(dst: String) {
         let pasteboard = NSPasteboard.general
         pasteboard.declareTypes([.string], owner: nil)
@@ -64,7 +61,7 @@ class VirtualKeyManager {
     }
     
     private func convertPaste(src: String) {
-        let dst = self.convert(src: src)
+        let dst = TypingConverter.convert(src)
         setPasteboardString(dst: dst)
         pollingCopyCompleted(src: src) { dst in
             self.cmdKeyEvent(virtualKey: Sauce.shared.keyCode(for: .v), flags: .maskCommand)

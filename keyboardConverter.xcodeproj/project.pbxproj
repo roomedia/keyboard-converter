@@ -15,6 +15,8 @@
 		FB3717B026A4522E008F100E /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = FB3717AF26A4522E008F100E /* HotKey */; };
 		FB413CB526A5B028004AF723 /* VirtualKeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB413CB426A5B028004AF723 /* VirtualKeyManager.swift */; };
 		FB413CBB26A5B10C004AF723 /* Sauce in Frameworks */ = {isa = PBXBuildFile; productRef = FB413CBA26A5B10C004AF723 /* Sauce */; };
+		FB413CC026A5CBE8004AF723 /* TypingConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB413CBF26A5CBE8004AF723 /* TypingConverter.swift */; };
+		FB413CEF26A65031004AF723 /* Jamo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB413CEE26A65031004AF723 /* Jamo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		FB37179D26A451F2008F100E /* keyboardConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardConverterUITests.swift; sourceTree = "<group>"; };
 		FB37179F26A451F2008F100E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB413CB426A5B028004AF723 /* VirtualKeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualKeyManager.swift; sourceTree = "<group>"; };
+		FB413CBF26A5CBE8004AF723 /* TypingConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingConverter.swift; sourceTree = "<group>"; };
+		FB413CEE26A65031004AF723 /* Jamo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jamo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				FB37178826A451F1008F100E /* Info.plist */,
 				FB37178926A451F1008F100E /* keyboardConverter.entitlements */,
 				FB413CB426A5B028004AF723 /* VirtualKeyManager.swift */,
+				FB413CBF26A5CBE8004AF723 /* TypingConverter.swift */,
+				FB413CEE26A65031004AF723 /* Jamo.swift */,
 			);
 			path = keyboardConverter;
 			sourceTree = "<group>";
@@ -265,6 +271,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB413CEF26A65031004AF723 /* Jamo.swift in Sources */,
+				FB413CC026A5CBE8004AF723 /* TypingConverter.swift in Sources */,
 				FB37178026A451EE008F100E /* AppDelegate.swift in Sources */,
 				FB413CB526A5B028004AF723 /* VirtualKeyManager.swift in Sources */,
 			);
